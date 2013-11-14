@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Flag - Centros de Formação</title>
+
+  <!-- Included CSS Files (Uncompressed) -->
+ 
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+
+  <!-- FONTES GOOGLE
+  ================================================== -->
+  <link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
+  
+
+  <!-- Included CSS Files (Compressed) -->
+  <!-- <link rel="stylesheet" href="stylesheets/foundation.min.css">-->
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+<style>
+  div>*{
+      font-family: 'Strait', sans-serif;
+      font-size: 17px;
+
+  }
+</style>
+
+</head>
+<body>
+
+
+  <!-- Main Page Content and Sidebar -->
+
+  <div class="row">
+    <div class="panel">
+    <div class="row">
+    
+
+<!-- Header and Nav -->
+      
+      <div class="row">
+        <div class="three columns">
+          <h1><a href="index.html"><img src="images/banners_logos/logo.png" /></a></h1>
+        </div>
+        <div class="nine columns">
+          <ul class="nav-bar right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="PluginGaleria/GaleriaFlag.html">Galeria</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li class="nav_select"><a>Inscrições de Cursos</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- Contact Details -->
+      <div class="twelve columns">
+    
+        <h3><span class="fundo_laranja">Agarra a tua oportunidade! =)</span></h3>
+        <p style="text-align:center;"> <span class="fundo_preto" >Para garantires a tua vaga é simples..só precisas de 3 passos! <br>Insere os dados e carrega nos separadores para avançar no processo de inscrição...</span></p>
+    
+  
+
+<dl class="tabs contained three-up">
+  <dd class="active"><a href="#" id="1passo">Primeiro Passo:</a></dd>
+  <dd class=""><a href="#" id="2passo">Segundo Passo:</a></dd>
+  <dd class=""><a href="#" id="3passo">Terceiro Passo:</a></dd>
+</dl>
+
+<br><br>
+
+
+
+  <div class="primeiraTab">
+<h2 style="text-align:center;">Informação Pessoal Básica</h2>
+  <br>
+  <form action="PHP/processa_inscricao.php" method="post">
+                    
+                    <div class="one columns"><label class="inline">Nome</label></div>
+                    <div class="eleven columns "><input type="text" id="Nome_formulario" placeholder="" name="nome" maxlength="130"/>
+                    <small id="avisoNome" class="invisivel">Por favor. Introduz um Nome válido...</small>
+                    
+                                </div>
+                        <div class="one columns"><label class="inline">Morada</label></div>
+                        <div class="eleven columns "><input type="text" id="Morada_formulario" placeholder="" name="morada" maxlength="150"/>
+                        <small id="avisoMorada" class="invisivel">Por favor. Introduz a tua Morada...</small>
+            
+                        </div>
+                        <!-- <div class="row collapse"> -->
+                    <div class="one columns">
+                      <label class="inline">Email</label>
+                    </div>
+                    <div class="six columns">
+                      <input class="" type="text" id="Email_formulario" placeholder="" name="email" maxlength="95"/>
+                      <small id="avisoEmail" class="invisivel">Por favor. Introduz um Email válido...</small>
+                                </div>
+                        <div class="one columns">
+                      <label class="inline">Contacto</label>
+                    </div>
+                    <div class="four columns">
+                      <input class="" type="text" id="telefone_formulario" placeholder="opcional" name="telefone" maxlength="9"/>
+                      
+                      
+                                </div>
+  <!--  -->                      
+  
+  
+             </div>     
+                          <!-- FIM DA PRIMEIRA TAB /////////////////////////////////////  -->
+
+              <div class="segundaTab">
+                
+      <h2 style="text-align:center;">Curso Pretendido</h2>
+<br>
+<div class="four columns">
+                <select name="curso" id="">
+                  <optgroup label="Cursos">                    
+                  <option value="1">Web Programmer & Mobile</option>
+                  <option value="2">Graphic Designer</option>
+                  <option value="3">Video & Motion</option>
+                  <option value="4">Web Design</option>
+                  </optgroup>
+
+                </select>
+ </div>
+
+<div class="four columns">
+                <select name="plataforma" id="">
+                  <optgroup label="Plataformas">
+                  <option value="1">Pc</option>
+                  <option value="2">Mac</option>
+                  </optgroup>
+                </select>
+ </div>
+
+<div class="four columns">
+                <select name="horario" id="">
+                  <optgroup label="Horário">
+                  <option value="1">Manhã - (9h30-12h30)</option>
+                  <option value="2">Tarde - (14h30-17h00)</option>
+                  <option value="3">Pós-Laboral - (18h30-21h30)</option>
+                  </optgroup>
+                </select>
+ </div>
+
+
+              </div>
+
+<!-- FIM DA SEGUNDA TAB///////////////////////////////////////////////////////////// -->
+
+          <div class="terceiraTab">
+                          
+        <h2 style="text-align:center;">Finalizar Inscrição</h2>
+<br>
+          <fieldset>
+            <div class="nine columns">
+              <label for="comment">Faz um comentário:<span class="subheader">(Opcional)</span> </label>
+              <textarea name="comentario" id="commentZone" cols="30" rows="6" style="resize: none;" maxlength="160"></textarea>
+              <p>Possuis um máximo de <span style="font-weight:bolder;font-weight:bold;">160</span> caracteres... Restam <span style="color:#23E210;font-weight:bold;" id="contaCaracteres">160</span> caracteres!</p>
+            </div>
+            <div class="three columns centered ">
+              <div>
+                <br>
+                <label for="">Como conheces-te a Flag?</label>  
+               <select name="feedback" id="">
+                  <optgroup label="Como conheces-te a Flag?">
+                  <option value="1">Internet</option>
+                  <option value="2">Amigo</option>
+                  <option value="3">Evento</option>
+                  <option value="4">Outro</option>
+                  </optgroup>
+                </select>
+               <br>
+               <br><br>
+              </div>
+              <input class=" large button success" type="submit" disabled value="Enviar Inscrição" id="finalizar">
+            </div>
+          </fieldset>
+
+             </div>
+
+<!-- FIM DA TERCEIRA TAB ///////////////////////////////////////////////////// -->
+
+           </form>    
+
+ 
+
+
+
+  
+
+
+  
+    
+      <!-- End Contact Details -->
+    
+    
+      <!-- Sidebar -->
+    
+     
+    
+    <!-- End Main Content and Sidebar -->
+    
+    
+    <!-- Footer -->
+    
+    <footer class="row">
+      <div class="twelve columns">
+        <hr />
+        <div class="row">
+          <div class="six columns">
+            <p>2012 Rv.</p>
+          </div>
+          <div class="six columns">
+            <ul class="link-list right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="PluginGaleria/GaleriaFlag.html">Galeria</a></li>
+              <li><a href="contactos.html">Contactos</a></li>
+              <li><a class="seleccionado">Inscrições de Cursos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- End Footer -->
+    
+    
+    
+
+</div> <!--fim do panel moldura-->
+  </div>  <!--fim da row moldura-->
+
+
+
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  
+  <script src="javascripts/jquery.js"></script>
+  
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  
+  <script src="javascripts/jquery.foundation.buttons.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
+  
+  <script src="javascripts/jquery.foundation.accordion.js"></script>
+  
+  <script src="javascripts/jquery.placeholder.js"></script>
+  
+  <script src="javascripts/jquery.foundation.alerts.js"></script>
+  
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  
+  <script src="javascripts/jquery.foundation.joyride.js"></script>
+  
+  <script src="javascripts/jquery.foundation.clearing.js"></script>
+  
+  <script src="javascripts/jquery.foundation.magellan.js"></script>
+  
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+<script>
+  jQuery(document).ready(function($) {
+
+
+  $('.fundo_preto').hide();
+
+setTimeout(function(){ 
+
+    $('.fundo_preto').show(3000);
+  
+  },2000);
+
+
+
+    $('.segundaTab').hide();
+    $('.terceiraTab').hide();
+
+      $('#1passo').click(function() {
+      $('.segundaTab').hide();
+      $('.terceiraTab').hide();
+      $('.primeiraTab').show();
+    });
+       
+      $('#2passo').click(function() {
+      $('.primeiraTab').hide();
+      $('.terceiraTab').hide();
+      $('.segundaTab').show();
+    });
+      
+      $('#3passo').click(function() {
+      $('.primeiraTab').hide();
+      $('.segundaTab').hide();
+      $('.terceiraTab').show();
+    });    
+
+
+
+  });
+</script>
+
+<script>
+  
+var textArea=document.getElementById('commentZone');
+var spanContaCaracteres=document.getElementById('contaCaracteres');
+
+setInterval(function() {
+
+spanContaCaracteres.innerHTML=160-textArea.value.length;
+  
+
+
+if (textArea.value.length <= 150) {
+  spanContaCaracteres.style.color="#23E210";
+}
+
+if (textArea.value.length > 150) {
+  spanContaCaracteres.style.color="#BDB628";
+}
+
+if (textArea.value.length > 155) {
+  spanContaCaracteres.style.color="#C11919";
+}
+
+
+  },20);
+
+
+// CHECAR NOME
+var Nome=document.getElementById('Nome_formulario');
+var checar_nome=/^([A-Z,a-z, ,.,ã,á,à,â,ê,í,ú,õ,ó,é,ü,-]){2,130}$/;
+
+Nome.onblur=function() {
+  if(!checar_nome.test(Nome.value)){
+    Nome.className="error";
+    document.getElementById('avisoNome').className="error";
+  }else{
+    Nome.className="";
+    document.getElementById('avisoNome').className="invisivel";
+  }
+};
+
+
+
+// CHECAR MORADA
+var Morada=document.getElementById('Morada_formulario');
+var checar_morada=/^([A-Z,a-z,0-9, ,.,ã,á,à,â,ê,í,ú,õ,ó,é,ü,º,ª,-]){2,130}$/;
+
+Morada.onblur=function() {
+  if(!checar_morada.test(Morada.value)){
+    Morada.className="error";
+    document.getElementById('avisoMorada').className="error";
+  }else{
+    Morada.className="";
+    document.getElementById('avisoMorada').className="invisivel";
+  }
+};
+
+
+
+
+//CAMPO DO EMAIL
+var Email=document.getElementById('Email_formulario');
+var checar_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+var manipuladorParaFinalizar=0;
+Email.onblur=function() {
+  // if(Email.value == "")
+  if(!checar_email.test(Email.value)){
+    manipuladorParaFinalizar=0;
+    Email.className="error";
+    document.getElementById('avisoEmail').className="error";
+  }else{
+    manipuladorParaFinalizar=1;
+    Email.className="";
+    document.getElementById('avisoEmail').className="invisivel";
+  }
+};
+
+
+
+var finalizar=document.getElementById('finalizar');
+setInterval(
+  function() {
+    if (Nome.value.length && manipuladorParaFinalizar && Morada.value.length) {
+        for (var i = 0; i < finalizar.attributes.length; i++) {
+            if (finalizar.attributes[i].name == "disabled" ) {
+                finalizar.removeAttribute("disabled");
+            
+            }
+        }
+    }else{
+      finalizar.setAttribute("disabled","disabled");
+    }
+
+},200);
+
+
+</script>
+
+</body>
+</html>

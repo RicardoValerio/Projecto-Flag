@@ -1,0 +1,119 @@
+
+
+/* -----------------------------------------
+   Home
+----------------------------------------- */
+
+
+body{
+	background: #aaca1e url(../images/banners_logos/bg.png);
+	background-repeat: repeat-x;
+	margin-top: 15px;
+}
+
+p,h1,h2,h3,h4,h5,h6,li{
+	font-family: 'Strait', sans-serif;
+
+}
+
+p{
+	font-size: 15px;
+}
+
+
+
+.testemunhos li {
+list-style-type: none;
+display:inline;
+
+}
+
+.testemunhos img:hover{
+	border:1px solid orange;
+	cursor: url(../images/icones/visto.png), auto;
+}
+
+.imagens_centradas img{
+	padding-left: 25px;
+}
+
+
+.diploma{
+	max-width: 100%;
+	height: auto;
+	padding-top: 45px;
+}
+
+
+.fundo_laranja{
+	background-color: rgba(255,140,0,0.9);
+	color:white;
+}
+
+.fundo_preto{
+	background-color: rgba(000, 000, 000, 0.4);
+	color: white;
+	padding: 4px;
+	font-size: 1.2em;
+}
+
+/* -----------------------------------------
+   Cursos
+----------------------------------------- */
+.titulo0,
+.titulo1,
+.titulo2,
+.titulo3{
+	cursor:pointer;
+}
+
+.titulo0:hover,
+.titulo1:hover,
+.titulo2:hover,
+.titulo3:hover{
+	background-color: #00D7D7;
+ }
+
+.listas{
+	margin-left: 50px; 
+	margin-top: 50px;
+}
+
+
+/* -----------------------------------------
+   Contactos
+----------------------------------------- */
+
+.fundo_amarelo{
+	background-color: rgb(217, 242, 250);
+}
+
+
+
+
+	/*******************************************************
+			 todas 
+	********************************************************/
+	
+	.seleccionado{
+		color:#1B8AFA;
+		font-weight: bolder;
+	}
+
+	.invisivel{
+		display:none;
+	}
+
+	#contagem{
+		color:green;
+		font-weight: bolder;
+	}
+
+	.nav_select{
+		background-color: black;
+
+	}
+	li.nav_select > a{
+		color:orange;
+		font-weight: bolder;
+	}
